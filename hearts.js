@@ -155,7 +155,7 @@ var hearts = function() {
     
     var hearts = {
         draw : function() {
-            var svg = d3.select('#main').append('svg'),
+            var svg = d3.select('#main').append('svg').attr('width', window.innerWidth).attr('height', window.innerHeight),
 	            heart1_transform = {'scale' : [300,300], 'translate' : [150,300]},
 	            heart2_transform = {'scale' : [7,7], 'translate' : [670,190]},
 	            heart3_transform = {'scale' : [50,50], 'translate' : [1200,230]},
